@@ -1,0 +1,85 @@
+.view-detail-wrapper {
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  padding: 0;
+}
+
+.view-detail.container {
+  padding: 2rem;
+  background-color: var(--bg-color);
+  box-shadow: rgba(50, 50, 50, 0.15) 3px 3px 6px 0px inset,
+              rgba(72, 72, 72, 0.15) -3px -3px 6px -5px inset;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  border-radius: 16px;
+}
+
+.view-info {
+  padding: 1rem;
+}
+
+.view-title h2 {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.status-info,
+.price-info {
+  display: flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.amount {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.total_room {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.text {
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+.address-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.address-info li {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.address-info label {
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+.description p {
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 576px) {
+  .view-detail.container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .view-info {
+    padding: 0.5rem;
+  }
+}

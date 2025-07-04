@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.last {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 86px;
+}
+
+@media screen and (max-width: 768px) {
+  .last {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .contact__container {
+    margin: 16px 0px;
+    padding-bottom: 0rem;
+  }
+  .contact__form {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contact__container {
+    margin: 0 0 24px;
+    padding-bottom: 0rem;
+  }
+}
+
+.h1h1 h1{
+    color: aqua;
+}

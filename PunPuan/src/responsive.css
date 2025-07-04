@@ -1,0 +1,14 @@
+/* Small devices (max-width: 732px) */
+@media (max-width: 732px) {
+  /* Place your small-screen styles here */
+}
+
+/* Medium devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+  /* Place your medium-screen styles here */
+}
+
+/* Large devices (max-width: 1366px) */
+@media (max-width: 1366px) {
+  /* Place your large-screen styles here */
+}
