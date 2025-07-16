@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
-.mt-4 {
-    margin-top: 0;
+.filter-container {
+    margin-top: 20px;
 }
 
 .title {
@@ -27,7 +26,8 @@ label {
     gap: 24px;
     position: relative;
     align-items: center;
-    margin-top: 0px;
+    box-shadow: 3px 3px 6px #bec3c9,
+                -3px -3px 6px #ffffff;
 }
 
 .filter {    
@@ -87,12 +87,14 @@ label {
     height: 100%;
     outline: none;
     font-size: 16px;
+    font-weight: 500;
     padding-left: 14px;
     border-radius: 8px;
-    box-shadow: rgba(50, 50, 50, 0.120) 3px 3px 6px 0px inset, rgba(72, 72, 72, 0.2) -3px -3px 6px -5px inset;
+    box-shadow: inset 3px 3px 6px #bec3c9,
+                  inset -3px -3px 6px #ffffff;
     border: 1px;
     background-color: var(--bg-color);
-    color: var(--text-color);
+    color: var(--status1-color);
     -moz-appearance: textfield;
 }
 
@@ -114,16 +116,10 @@ input[type="number"]::-webkit-inner-spin-button{
     border-radius: 5px;
     background: #ccc;
     position: relative;
+    box-shadow: inset 1px 1px 3px #bec3c9,
+                inset -1.5px -1.5px 3px #ffffff;
 }
 
-.slider .progress {
-    height: 5px;
-    position: absolute;
-    left: 25%;
-    right: 25%;
-    border-radius: 5px;
-    background: var(--second-color);
-}
 
 .range-input {
     position: relative;
@@ -139,13 +135,22 @@ input[type="number"]::-webkit-inner-spin-button{
     -webkit-appearance: none;
 }
 
+.slider .progress {
+    height: 5px;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    border-radius: 5px;
+    background: var(--status1-color);            
+}
+
 input[type="range"]::-webkit-slider-thumb {
     height: 17px;
     width: 17px;
     border-radius: 50%;
     pointer-events: auto;
     -webkit-appearance: none;
-    background: var(--second-color);
+    background: var(--status1-color);
 }
 
 input[type="range"]::-moz-range-thumb {
@@ -174,7 +179,10 @@ input[type="range"]::-moz-range-thumb {
     height: 100vh;
 }
 
-select {
+.form-select {
+    appearance: none; /* remove default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
     width: 100%;
     padding: 13px;
     font-size: 16px;    /* Ensures no '...' is applied */
@@ -186,14 +194,18 @@ select {
     border: 1px;
     border-radius: 8px;
     margin-bottom: 12px;
-    color: var(--text-color);
+    color: var(--main-color);
     background-color: var(--bg-color);
-    box-shadow: rgba(50, 50, 50, 0.120) 3px 3px 6px 0px inset, rgba(72, 72, 72, 0.2) -3px -3px 6px -5px inset;
+    box-shadow: inset 3px 3px 6px #bec3c9,
+                  inset -3px -3px 6px #ffffff;
 }
 
 select option {
-    font-size: 16px;
-    color: var(--main-color);
+   background-color: white;
+   color: var(--main-color);
+   font-size: 16px;
+   background-color: var(--containers-color);
+   border-radius: 5px;
 }
 
 .custom-select::after {
@@ -206,6 +218,12 @@ select option {
   font-size: 16px;
 }
 
+select:focus {
+  outline: none;
+  box-shadow: 3px 3px 6px #bec3c9,
+                -3px -3px 6px #ffffff;;
+}
+
 /* Type */
 
 .property-types-container {
@@ -214,8 +232,6 @@ select option {
   /* background-color: #2f3554; */
   padding: 5px 0px;
   border-radius: 10px;
-  font-family: sans-serif;
-
 }
 
 .property-types-header {
@@ -257,8 +273,9 @@ select option {
     transition: .1s;
     position: relative;
     z-index: 1;
-    color: var(--main-color);
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 2px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    color: var(--text-color);
+    box-shadow: 3px 3px 6px #bec3c9,
+                  -3px -3px 6px #ffffff;
 }
 
 .property-button:hover {
@@ -268,11 +285,14 @@ select option {
 
 
 .property-button.active {
-    box-shadow: rgba(50, 50, 50, 0.250) 3px 3px 6px 0px inset, rgba(72, 72, 72, 0.2) -3px -3px 6px -5px inset;
+    /* box-shadow: inset 3px 3px 6px #d4b13e,
+                  inset -3px -3px 6px #ffefbbd1;     */
+    box-shadow: inset 3px 3px 6px #bec3c9,
+                inset -3px -3px 6px #ffffff;
     position: relative;
     z-index: 10;
-    background-color: var(--second-color);
-    color: var(--main-color);
+    background-color: var(--containers-color);
+    color: var(--status1-color);
     /* border: 1px solid var(--main-color); */
 }
 

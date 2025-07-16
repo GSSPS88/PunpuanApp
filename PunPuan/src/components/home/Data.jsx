@@ -14,14 +14,14 @@ const Data = () => {
       </p>
 
       <button
-        className="home__button button--flex"
+        className="home__button medium-button"
         onClick={() => navigate('/register/tenant')}
       >
         Tenant <i className="bi bi-person-raised-hand"></i>
       </button>
 
       <button
-        className="home__button button--flex"
+        className="home__button medium-button"
         onClick={() => navigate('/register/landlord')}
       >
         Landlord <i className="bi bi-houses-fill"></i>

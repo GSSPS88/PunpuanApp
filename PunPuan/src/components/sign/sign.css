@@ -18,11 +18,12 @@
 
 .sign__item {
     margin-left: 20px;
-    background-color: var(--bg-color);
+    background-color: var(--container2-color);
     padding: 10px 20px;
     border-radius: 20px;
     color: var(--text-color);
-    box-shadow: rgba(50, 50, 50, 0.15) 3px 3px 6px 0px inset, rgba(72, 72, 72, 0.15) -3px -3px 6px -5px inset;
+    box-shadow: inset 2px 2px 4px #bec3c9,
+                  inset -3px -3px 6px #ffffff;   
 }
 
 .id {

@@ -1,20 +1,26 @@
 .contact .section {
     margin: 0;
 }
-.contact__container {
-    margin-left: 168px;
-    padding-bottom: 3rem;
+.contact_container {
+    width: 450px;
+    border-radius: 16px;
+    padding: 30px;
+    background-color: var(--container-color);
+  box-shadow: 3px 3px 6px #bec3c9,
+                  -3px -3px 6px #ffffff;
 }
 
 .contact__title {
-    text-align: start;
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 2rem;
 }
 
 .contact__form {
-    width: 360px;
+    width: 100%;
 }
 
 .contact__form-div {
@@ -29,16 +35,19 @@
     left: 0;
     width: 100%;
     height: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    background: none;
+    border: none;
+    background: var(--container2-color);
     color: var(--text-color);
     outline: none;
-    border-radius: 0.75rem;
+    border-radius: 8px;
     padding: 1.5rem;
     z-index: 1 ;
+    box-shadow: inset 3px 3px 6px #bec3c9,
+                inset -3px -3px 6px #ffffff;
 }
 
 .contact__form-tag {
+    display: none;
     position: absolute;
     top: -0.75rem;
     left: 1.25rem;
@@ -57,9 +66,11 @@
 }
 
 .button {
+    border-radius: 8px;
     background-color: var(--second-color);
     color: var(--main-color);
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 2px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    box-shadow: 2px 2px 4px #bec3c9,
+                -3px -3px 6px #ffffff;
 }
 
 .button i {
@@ -75,6 +86,7 @@
 @media screen and (max-width: 992px) {
     .contact__container {
         column-gap: 3rem;
+        padding: 30px 10px;
     }
   }
   @media screen and (max-width: 768px) {
@@ -92,7 +104,7 @@
   @media screen and (max-width: 576px) {
     .contact__info {
         grid-template-columns: 1fr;
-        padding: 1rem;
+        padding: 0rem;
     }
 
     .contact__form {

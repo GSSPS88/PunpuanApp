@@ -1,0 +1,59 @@
+.owner-card {
+  width: 450px;
+  text-align: center;
+  padding: 30px;
+  border-radius: 16px;
+  background-color: var(--container-color);
+  box-shadow: 3px 3px 6px #bec3c9,
+                  -3px -3px 6px #ffffff;
+}
+
+.owner-title {
+  font-size: 20px;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.owner-image {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 3px solid var(--text-color);
+  padding: 5px;
+  object-fit: cover;
+  margin: 2rem auto 0;
+}
+
+.owner-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--main-color);
+  margin: 30px;
+}
+
+.owner-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.icon-button {
+  color: var(--main-color);
+  width: 66px;
+  height: 66px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--container-color);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 3px 3px 6px #bec3c9,
+                  -3px -3px 6px #ffffff;}
+
+.icon-button:hover {
+  background-color: #f0f0f0;
+}

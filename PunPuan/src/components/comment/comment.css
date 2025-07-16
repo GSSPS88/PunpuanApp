@@ -1,0 +1,113 @@
+.comment .section {
+    margin: 0;
+}
+.comment__container {
+    margin-left: 0px;
+    padding-bottom: 3rem;
+}
+
+.comment__title {
+    text-align: start;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.comment__form {
+    width: 360px;
+}
+
+.comment__form-div {
+    position: relative;
+    margin-bottom: var(--mb-1);
+    height: 4rem;
+}
+
+.comment__form-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--container-color);
+    background: none;
+    color: var(--text-color);
+    outline: none;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    z-index: 1 ;
+    box-shadow: inset 3px 3px 6px #bec3c9,
+                inset -3px -3px 6px #ffffff;
+}
+
+.comment__form-tag {
+    display: none;
+    position: absolute;
+    top: -0.75rem;
+    left: 1.25rem;
+    font-size: var(--smaller-font-size);
+    padding: 0.25rem;
+    background-color: var(--body-color);
+    z-index: 10;
+    color: var(--main-color);
+}
+.comment__form-area {
+    height: 11rem;
+}
+
+.comment__form-area textarea {
+    resize: none;
+}
+
+.send-button {
+    background-color: var(--second-color);
+}
+
+.button i {
+    color: var(--main-color);
+    margin-left: 8px;
+}
+
+.button:hover {
+    background-color: var(--second-color);
+    box-shadow: rgba(50, 50, 50, 0.2) 3px 3px 6px 0px inset, rgba(72, 72, 72, 0.2) -3px -3px 6px -5px inset;
+}
+
+@media screen and (max-width: 992px) {
+    .comment__container {
+        column-gap: 3rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .comment__container {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+    .comment__info {
+        justify-content: center;
+    }
+    .comment__form {
+        margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .comment__info {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .comment__form {
+        width: 100%;
+        padding: 1rem;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .comment__info {
+        justify-content: center;
+        padding: 1rem;
+    }
+    .comment__form {
+        padding: 1rem;
+    }
+  }
+
