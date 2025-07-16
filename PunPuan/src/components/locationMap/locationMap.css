@@ -1,0 +1,19 @@
+@import url('https://unpkg.com/leaflet@1.9.3/dist/leaflet.css');
+
+.map-wrapper {
+  padding: 0;
+  border-radius: 12px;
+  margin-bottom: 60px;
+
+}
+
+.map-wrapper h2 {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.leaflet-control-zoom {
+    z-index: 1;
+}

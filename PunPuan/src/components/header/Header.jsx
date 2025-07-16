@@ -38,16 +38,16 @@ const Header = () => {
                         </Link>
                     </li>
                     <li className="nav__item">
-                        <Link to="/aboutPage" className="nav__link active-link">
+                        <Link to="/contactPage" className="nav__link active-link">
                           <i class="bi bi-envelope nav__icon"></i> 
                           Contact
                         </Link>
                     </li>
-                    <li className="nav__item">
+                    <li className="nav__item small-button">
 
                         <Link to="/SignUp" className="nav__link active-link">
                           <i class="bi bi-people nav__icon"></i> 
-                          Sign Up
+                          Sign In
                         </Link>
                     </li>
                 </ul>

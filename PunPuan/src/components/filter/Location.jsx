@@ -1,22 +1,98 @@
 import React, { useState, useEffect } from 'react';
 
 const laosData = {
+  "Attapeu": {
+    "Samakkixay": ["Ban Xaysettha", "Ban Somsanouk", "Ban Donsavanh"],
+    "Sanamxay": ["Ban Phouampha", "Ban Vangphai"],
+    "Sanxay": ["Ban Nonghin", "Ban Phouhouay"]
+  },
+  "Bokeo": {
+    "Houayxay": ["Ban Meungneua", "Ban Done"],
+    "Meung": ["Ban Meung", "Ban Sopmeung"],
+    "Paktha": ["Ban Paknga", "Ban Namkeung"]
+  },
+  "Bolikhamxay": {
+    "Paksan": ["Ban Keun", "Ban Namsanam"],
+    "Borikhane": ["Ban Nakhang", "Ban Phon"],
+    "Khamkeut": ["Ban Lak Sao", "Ban Viengthong"]
+  },
+  "Champasak": {
+    "Pakse": ["Ban Lak 20", "Ban Thongphong"],
+    "Pathoumphone": ["Ban Nongphaya", "Ban Na"],
+    "Khong": ["Ban Don Det", "Ban Don Khon"]
+  },
+  "Houaphanh": {
+    "Sam Neua": ["Ban Viengxay", "Ban Namnoeung"],
+    "Xiengkhor": ["Ban Sop Lao", "Ban Namthon"],
+    "Sopbao": ["Ban Huaythu", "Ban Vieng"]
+  },
+  "Khammouane": {
+    "Thakhek": ["Ban Thakhek", "Ban Napheng"],
+    "Mahaxay": ["Ban Dong", "Ban Thong"],
+    "Nakai": ["Ban Nakai Tai", "Ban Sop Hia"]
+  },
+  "Luang Namtha": {
+    "Namtha": ["Ban Namtha", "Ban Khoua"],
+    "Sing": ["Ban Meuang", "Ban Thongpheng"],
+    "Long": ["Ban Long", "Ban Soplong"]
+  },
+  "Luang Prabang": {
+    "Luang Prabang": ["Ban Vat Nong", "Ban Xieng Mouane"],
+    "Pak Ou": ["Ban Pak Ou", "Ban Paktha"],
+    "Phonxay": ["Ban Xay", "Ban Nong"]
+  },
+  "Oudomxay": {
+    "Xay": ["Ban Xay", "Ban Nalao"],
+    "La": ["Ban La", "Ban Namhoum"],
+    "Namor": ["Ban Namor", "Ban Na"]
+  },
+  "Phongsaly": {
+    "Phongsaly": ["Ban Phongsaly", "Ban Boun Neua"],
+    "Samphanh": ["Ban Samphanh", "Ban Khoun"],
+    "May": ["Ban May", "Ban Vieng"]
+  },
+  "Salavan": {
+    "Salavan": ["Ban Salavan", "Ban Talong"],
+    "Lakhonepheng": ["Ban Lakhon", "Ban Pheng"],
+    "Samoui": ["Ban Samoui", "Ban Ta Oy"]
+  },
+  "Savannakhet": {
+    "Kaysone Phomvihane": ["Ban Xayaphoum", "Ban Non"],
+    "Outhoumphone": ["Ban Xeno", "Ban Thapha"],
+    "Phin": ["Ban Phin", "Ban Kengkok"]
+  },
+  "Sekong": {
+    "Lamarm": ["Ban Lamarm", "Ban Nong"],
+    "Thateng": ["Ban Thateng", "Ban Song"],
+    "Dakcheung": ["Ban Dakcheung", "Ban Phou"]
+  },
+  "Vientiane Province": {
+    "Thoulakhom": ["Ban Thoulakhom", "Ban Vieng"],
+    "Vangvieng": ["Ban Vangvieng", "Ban Viengkeo"],
+    "Keo-Oudom": ["Ban Keo", "Ban Oudom"]
+  },
   "Vientiane Prefecture": {
     "Chanthabuly": ["Ban Phonthan", "Ban Nongbone", "Ban Watnak"],
     "Sikhottabong": ["Ban Dongdok", "Ban Phonpapao"],
-    "Sisattanak": ["Ban Simeuang", "Ban Haisok", "Ban Phonsinuan"],
-    "Xaysetha": ["Ban Nongbeuk", "Ban Saphanthong Neua"],
-    "Hadxayfong": ["Ban Naxay", "Ban Mai", "Ban Dongnaxok"]
+    "Sisattanak": ["Ban Simeuang", "Ban Haisok"]
   },
-  "Luang Prabang": {
-    "Mueang Luang Prabang": ["Ban Xiengthong", "Ban Watphabook", "Ban Vangvieng"],
-    "Phonxay": ["Ban Phonxay", "Ban Hadsadone"]
+  "Xaisomboun": {
+    "Anouvong": ["Ban Anouvong", "Ban Muang"],
+    "Thathom": ["Ban Thathom", "Ban Namkong"],
+    "Hom": ["Ban Hom", "Ban Lak"]
   },
-  "Champasak": {
-    "Pakse": ["Ban Phonxai", "Ban Thongkhankham"],
-    "Mueang Champasak": ["Ban Wat Luang", "Ban Nong Sa"]
+  "Xayabouly": {
+    "Xayabouly": ["Ban Xayabouly", "Ban Don"],
+    "Hongsa": ["Ban Hongsa", "Ban Namkeung"],
+    "Phiang": ["Ban Phiang", "Ban Muang"]
+  },
+  "Xiengkhouang": {
+    "Phonsavan": ["Ban Phonsavan", "Ban Khoum"],
+    "Khoune": ["Ban Khoune", "Ban Hieng"],
+    "Nonghet": ["Ban Nonghet", "Ban Muang"]
   }
 };
+
 
 const Location = () => {
   const [province, setProvince] = useState('');

@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import "./contact.css"
+import "./contactLandlord.css"
 
-const Contact = () => {
+const contactLandlord = () => {
 const form = useRef();
 
   const sendEmail = (e) => {
@@ -16,11 +16,11 @@ const form = useRef();
   };
 
   return (
-    <section className="contact" id="contact">
-            <div className="contact__container contact grid">
+    <section className="contactLandlord" id="contact">
+            <div className="contact_container contact grid">
 
                 <div className="contact__content">
-                    <h3 className="contact__title">Comment</h3>
+                    <h2 className="contact__title">Send email to Landlord</h2>
 
                     <form ref={form} onSubmit={sendEmail} className="contact__form">
 
@@ -35,12 +35,12 @@ const form = useRef();
                         </div>
 
                         <div className="contact__form-div contact__form-area">
-                            <label className="contact__form-tag">Comment</label>
+                            <label className="contact__form-tag">Message</label>
                             <textarea name="message" cols="30" rows="10" className="contact__form-input" placeholder="Message"></textarea>
                         </div>
                         
                         <button className="button button--flex">
-                            Send Message
+                            Send to email
                         <i class="bi bi-send-fill"></i>
                         </button>
                     </form>
@@ -51,4 +51,4 @@ const form = useRef();
   )
 }
 
-export default Contact;
+export default contactLandlord;

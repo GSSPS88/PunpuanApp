@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /*====== Vaiable css ======*/
 :root {
@@ -12,13 +12,13 @@
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color:  hsl(var(--hue), var(--sat), 95%);
   --container-color: #f2f2f2;
+  --container2-color: #f0f0f0;
   --bg-color: #e9e9e9;
   --icon-color: #4741a6;
   /* --main-color: #C0C9EE; */
   --main-color: #2d2d2d;
   --second-color: #f4cc4a;
   --status1-color: #00CAFF;
-
   /*====== Font and Typography ======*/
   --body-font: "Inter", sans-serif;
 
@@ -55,6 +55,33 @@
   --z-modal: 1000;
 
 }
+
+  /*====== Scroll bar ======*/
+
+/* Entire scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* for vertical scrollbar */
+  height: 10px; /* for horizontal scrollbar */
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background: none;
+  border-radius: 10px;
+}
+
+/* Thumb (the part you drag) */
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 10px;
+  border: 1px solid transparent; /* for padding effect */
+}
+
+/* On hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color);
+} */
+
   /* Responsive typography */
 @media screen and (max-width: 992px) {
   :root {
@@ -158,14 +185,34 @@
     gap: 1.5rem;
   }
   /*====== Buttons ======*/
-  .button {
-    display: inline-block;
-    color: var(--container-color);
-    padding: 1.25rem 2rem;
-    border-radius: 1rem;
-    font-weight: var(--font-medium);
-    font-weight: var(--h3-font-size);
-    margin-right: 25px;
+  .small-button {
+    padding: 1rem 2rem;
+    color: var(--main-color);
+    box-shadow: 3px 3px 6px #bec3c9,
+                -3px -3px 6px #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 36px;
+    cursor: pointer;
+  }
+
+  .small-button:hover {
+    box-shadow: rgba(50, 50, 50, 0.2) 3px 3px 6px 0px inset, rgba(72, 72, 72, 0.2) -3px -3px 6px -5px inset;
+  }
+  
+  .medium-button {
+    padding: 1.3rem 2rem;
+    color: var(--main-color);
+    box-shadow: 3px 3px 6px #bec3c9,
+    -3px -3px 6px #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .medium-button:hover {
+    box-shadow: rgba(50, 50, 50, 0.2) 3px 3px 6px 0px inset, rgba(72, 72, 72, 0.2) -3px -3px 6px -5px inset;
   }
 
   .button:hover {
@@ -184,6 +231,39 @@
 
   .data {
     color: var(--status1-color);
+  }
+
+  .box_container {
+    margin-top: 120px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    background-color: var(--container-color);
+    box-shadow: 3px 3px 6px #bec3c9,
+            -3px -3px 6px #ffffff;
+  }
+
+  label {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .input_app,
+  .select_app,
+  .textarea_app {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin: 5px 0 1.2rem;
+    border-radius: 5px;
+    border: 2px solid var(--container-color);
+    /* border: 2px solid var(--text-color); */
+    background-color: var(--container2-color);
+    color: var(--text-color);
+    font-size: 12px;
+    box-shadow: inset 1px 1px 2px #bec3c9,
+                inset -1.5px -1.5px 3px #ffffff;
   }
 
   /*====== Breakpoints ======*/
