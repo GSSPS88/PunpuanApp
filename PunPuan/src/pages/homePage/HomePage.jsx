@@ -5,9 +5,7 @@ import Home from '../../components/home/home';
 import Slider from '../../components/slider/slider';
 import FAQ from '../../components/faq/FAQ';
 import Contact from '../../components/contact/Contact';
-import './homePage.css'
-// import Styles from '../../Styles/homePage.module.css'
-
+import '../../Styles/homePage.css'
 
 const HomePage = () => {
   return (
